@@ -1,0 +1,59 @@
+.brands {
+
+    .car-brands-wrapper {
+    
+        span {
+                margin-top: -50px;
+                padding-bottom: 50px;
+                display: block;
+            }
+            
+        a {
+            color: $primary_color;        
+    
+            .single_product{
+                position: relative;
+                margin-bottom: 20px;
+                padding: 5px 15px; 
+                min-height: 320px;
+                border: 1px solid #e5e5e5;
+                border-radius: 3px;
+    
+                p {
+                    color: $fonts_color;
+    
+                    @media #{$large-mobile}{
+                        font-size: 16px;
+                    }
+                }
+    
+                .product-thumb {
+                    margin: 10px 0;
+    
+                    img {
+                        height: 80px;
+                    }
+                }
+    
+                @media #{$large-mobile}{
+                    min-height: auto;
+                }
+            }
+    
+            &:hover {
+                text-decoration: none;
+                color: $primary_color;
+    
+                .single_product {
+                    box-shadow: 0 4px 8px 0 rgba(31,44,56,.15);
+                    transition: box-shadow 20ms linear;
+    
+                    p {
+                        color: $fonts_color;
+                    }
+                }
+            }
+        }
+       
+    }
+}

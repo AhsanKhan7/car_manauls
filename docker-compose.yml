@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  appdb:
+    image: 'bitnami/mongodb:latest'
+    volumes:
+      - ./mongodump:/home/bitnami/mongodump
+    ports:
+      - '27017:27017'

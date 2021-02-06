@@ -1,0 +1,99 @@
+/*  link as button  */
+
+.main-button {
+
+    a {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 600;
+        color: $primary_color;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $secondary_color;
+        text-align: center;
+        padding: 0 30px;
+        display: inline-block;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 4px;
+        box-shadow: none;
+
+        &:hover{
+            background: $primary_color;
+            color: $secondary_color;
+            text-decoration: none;
+        }
+
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+}
+
+.thin-button {
+
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+
+    a {
+        line-height: 48px;
+        background: $primary_color;
+        color: $white;
+        border: 1px solid $white;
+        font-weight: 600;
+        padding: 0 33px;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+
+        &:hover {
+            background: $white;
+            color: $primary_color;
+            text-decoration: none;
+        }
+
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+
+    &.inverted {
+        a  {
+            background: $white;
+            color: $primary_color;
+            border: 1px solid $primary_color;
+            border-radius: 4px;
+            
+            &:hover {
+                background: $primary_color;
+                color: $white;
+            }
+        }
+    }
+}
+
+/*  button  */
+
+button.main {
+    font-weight: 600;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    border: none;
+    background: $secondary_color;
+    color: $primary_color;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 4px;
+
+    &:hover {
+        background: $primary_color;
+        color: $secondary_color;
+    }
+}

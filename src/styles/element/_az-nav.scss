@@ -1,0 +1,16 @@
+.az-navigation-wrapper {
+    a {
+        font-size: 20px;
+        padding: 10px 20px;
+        color: $primary_color;
+        border: 1px solid transparent;
+        display: inline-flex;
+
+        &:hover {
+            color: $secondary_color;
+            text-decoration: none;
+            border: 1px solid $secondary_color10;
+            background: $secondary_color11;
+        }
+    }
+}

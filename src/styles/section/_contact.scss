@@ -1,0 +1,99 @@
+.contact-area{
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 30px;
+    }
+}
+.contact_message{
+    .contact_textarea {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    & h3{
+        font-size: 21px;
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 25px;
+        @media #{$tablet-device}{
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    & p{
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    & label{
+        line-height: 18px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $primary_color;
+    }
+    & input{
+        border: none;
+        border-bottom: 1px solid $primary_color; 
+        height: 45px;
+        width: 100%;
+        padding: 0 20px;
+        color: $primary_color;
+        font-size: 16px;
+
+        &:focus {
+            border-bottom: 1px solid $secondary_color2;
+            color: $primary_color;
+        }
+    }
+    & textarea{
+        height: 170px;
+        border: none;
+        border-bottom: 1px solid $primary_color;
+        resize: none;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px 20px;
+        color: $fonts_color;
+        font-size: 16px;
+
+        &:focus {
+            border: 1px solid $secondary_color2;
+        }
+    }
+    &.content{
+        @media #{$tablet-device}{
+            margin-bottom: 52px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 52px;
+        }
+        
+    }
+    &.form{
+        & p{
+            &.form-message{
+                margin: 10px;
+                text-align: center;
+
+                @media #{$large-mobile}{
+                    text-align: start;
+                }
+
+                .thank-you {
+                    color: #28a745;
+                }
+                .error {
+                    color: #dc3545;
+                }
+            }
+        }
+    }
+    
+}

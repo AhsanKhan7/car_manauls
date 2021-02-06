@@ -1,0 +1,46 @@
+.nav-tabs.info-tabs {
+
+    border-bottom: none;
+    margin-bottom: 20px;
+
+    a {
+    display: block;
+    float: left;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: $fonts_color4;
+    font-weight: 600;
+    margin-right: 20px;
+    line-height: 26px;
+    position: relative;
+    padding: 10px 0;
+    border: none;
+
+        &.active,
+        &:hover {
+            color: $primary_color;
+            border: none;
+
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            left: 0;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            bottom: 0;
+            height: 2px;
+            background: $secondary_color;
+            position: absolute;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}

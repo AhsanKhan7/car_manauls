@@ -1,0 +1,63 @@
+.pdf-container {
+
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+    
+    @media #{$large-mobile}{
+        padding-top: 125%;
+        }
+
+    iframe {
+        border: 1px solid $secondary_color10;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;            
+     }
+
+    .pdf-controls-container {
+        background: $fonts_color6;
+        border-bottom: 2px solid $secondary_color4;
+        padding: 5px 0;
+        
+        .pdf-control-element {
+            display: inline-block;
+            padding: 0 20px;
+            vertical-align: middle;
+
+            &.loading-indicator {
+                display: none;
+
+                &.pdf-loading {
+                    display: inline-block;
+                }
+            }
+        }
+
+        input {
+            width: 60px;
+            background-image: linear-gradient($fonts_color5, $fonts_color4);
+            border: none;
+            box-shadow: none;
+            text-align: right;
+            padding-right: 5px;
+            color: #fff;
+            border: 1px solid $secondary_color4;
+        }
+
+        button {
+            background: none;
+            box-shadow: none;
+            border: none;
+            font-size: 30px;
+        }
+    }
+
+    .canvas-container {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
